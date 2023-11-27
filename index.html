@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makan Cuy!</title>
+  <!--Bootrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--Bootrap-->
+
+  <!--Awesome Font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!--Awesome Font-->
+
+  <!--CSS-->
+  <link rel = "stylesheet" href = "./style/style.css">
+  <!--CSS-->
+
+  <!--Icon-->
+  <link rel="icon" href="./assets/zenless-zone-zero-miyabi.gif">
+   <!--Icon-->
+</head>
+<body>
+  
+  <!--Navbar-->
+  <nav class="navbar bg-body-tertiary" >
+    <div class="container-sm">
+      <a class="navbar-brand"><h4>Makan Cuy!</h4></a>
+      <div>
+        <a href="#meal" class="hyperlink-text"><h4>Let's Go!</h4> </a>
+      </div>
+    </div>
+  </nav>
+   <!--Navbar-->
+
+   <hr class="horizontal-line"/>
+
+  <!--Section Intro-->
+  <section class="intro-section">
+    <div class="container">
+        <div class="row" style="padding: 30px 0 30px 0;">
+            <div class="col-6" >
+                <h2>Selamat Datang di Makan Cuy!</h2>
+                <p>Temukan berbagai macam resep hidangan lezat di Makan Cuy!.</p>
+                <p>Makan Cuy! adalah portal makanan yang memanjakan lidah Anda dengan berbagai pilihan hidangan lezat. Dengan desain yang bersahabat dan antarmuka yang mudah digunakan, Makan Cuy! menjadi teman setia para foodies yang mencari pengalaman kuliner yang tak terlupakan.</p>
+                <a href="#hasil-meal" class="btn btn-primary" style="width: 45%;">Mulai!</a>
+            </div>
+            <div class="col-6">
+                <img src="./assets/klee.webp" alt="Foodie Delight Restaurant" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Intro-->
+
+<hr class="horizontal-line"/>
+
+<!--Section Search Meal-->
+  <section>
+  <div class = "container-fluid">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Masukan bahan baku makanan yang anda inginkan!</h2>
+        <blockquote>Makan adalah kebutuhan, tetapi makan dengan cerdas adalah seni.<br>
+          <cite>- François de la Rochefoucauld</cite>
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Masukan jenis makanan!" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result" id="hasil-meal">
+        <h2 class = "title">Hasil pencarian anda:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+    
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Section Search Meal-->
+
+<hr class="horizontal-line"/>
+
+<!--Section Random meal-->
+<section id="random">
+  <div class="container text-center">
+    <h2>Makanan Acak</h2>
+    <button class="btnMakananAcak">Makanan Acak</button>
+    <p style="margin: 20px;">Hasil Makanan Acak:</p>
+    <div id="makananAcakContainer"></div>
+  </div>
+</section>
+<!--Section Random meal-->
+
+<hr class="horizontal-line"/>
+
+<!--Footer-->
+<footer class="bg-light text-dark">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Makan Cuy!</h5>
+        <p>Jelajahi dunia makanan lezat bersama Makan Cuy! Panduan utama Anda untuk menemukan resep lezat dari berbagai masakan.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark hyperlink-text">Home</a></li>
+          <li><a href="#" class="text-dark hyperlink-text">Search</a></li>
+          <li><a href="#" class="text-dark hyperlink-text">Random Meal</a></li>
+          <li><a href="#" class="text-dark hyperlink-text">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Info Kontak</h5>
+        <p>Pertanyaan atau saran? Hubungi kami!</p>
+        <p><strong>Phone:</strong> 123-456-7890</p>
+        <p><strong>Email:</strong> info@hoshimimiyabi.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-3 bg-light">
+    <img src="./assets/miyabi optimize.gif" style="margin: 30px;" alt="">
+    <p>&copy; 2023 Makan Cuy! | Designed by Hoshimi Miyabi</p>
+  </div>
+</footer>
+<!--Footer-->
+
+  <script src = "./script/script.js"></script> 
+
+</body>
+</html>
